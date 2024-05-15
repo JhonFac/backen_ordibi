@@ -1,0 +1,78 @@
+
+
+### Solicitar la documentación interactiva de Swagger (Swagger UI)
+GET http://127.0.0.1:8000/docs
+
+
+### Obtener todas las ubicaciones ###
+GET http://127.0.0.1:8000/locations/
+
+### Obtener una ubicación por ID ###
+GET http://127.0.0.1:8000/locations/1
+
+
+### Obtener una ubicación por ID ###
+GET http://127.0.0.1:8000/locations/order
+
+
+### Crear una nueva ubicación ###
+POST http://127.0.0.1:8000/locations/
+Content-Type: application/json
+
+{
+    "name": "Pereira",
+    "latitude": 4.814,
+    "longitude": -75.694,
+    "nreviewedame": 1,
+    "category_id": 4
+}
+
+
+
+
+
+### Actualizar una ubicación por ID
+PATCH  http://127.0.0.1:8000/locations/3
+Content-Type: application/json
+
+{
+    "nreviewedame": 2
+}
+
+###
+
+### Borrar una ubicación por ID
+DELETE http://127.0.0.1:8000/locations/8
+###
+
+
+
+
+
+### Obtener todas las categorias ###
+GET http://127.0.0.1:8000/categories/
+
+### Obtener una categoria por ID ###
+GET http://127.0.0.1:8000/categories/2
+
+### Crear una nueva categoria ###
+POST http://127.0.0.1:8000/categories/
+Content-Type: application/json
+
+{"name": "Galería de arte"}
+
+
+### Actualizar una categoria por ID
+PATCH  http://127.0.0.1:8000/categories/1
+Content-Type: application/json
+
+{
+    "name": "Restaurantess"
+}
+
+###
+
+### Borrar una categoria por ID
+DELETE http://127.0.0.1:8000/categories/1
+###
+
